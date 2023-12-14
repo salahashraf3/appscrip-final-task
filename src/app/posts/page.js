@@ -2,7 +2,7 @@
 import Link from "next/link";
 import style from "@/app/posts/page.module.css";
 import Footer from "@/component/Footer/Footer";
-import client from "@/apolloClient"; // Import the Apollo Client instance
+import client from "@/apolloClient"; 
 import { gql } from "graphql-tag";
 import { useQuery } from "@apollo/client";
 
@@ -24,7 +24,7 @@ const MY_QUERY = gql`
   }
 `;
 
-const posts = () => {
+const Posts = () => {
   const NAV_ITEMS = [
     { title: "Posts", url: "/posts", active: true },
     { title: "Home", url: "/", active: false },
@@ -97,4 +97,4 @@ const posts = () => {
   );
 };
 
-export default posts;
+export default Posts;
