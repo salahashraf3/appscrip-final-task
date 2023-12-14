@@ -30,7 +30,7 @@ const Posts = () => {
     { title: "Home", url: "/", active: false },
     { title: "Contact Us", url: "/contact", active: false },
     { title: "RSS", url: "/Rss", active: false },
-    { title: "Github", url: "/Github", active: false },
+    { title: "Github", url: "https://github.com/salahashraf3", active: false },
   ];
 
   const { loading, error, data } = useQuery(MY_QUERY, { client });
@@ -54,6 +54,7 @@ const Posts = () => {
                   }`}
                   key={id}
                   href={item.url}
+                  target="_blank"
                 >
                   {item.title}
                 </Link>

@@ -8,7 +8,7 @@ const page = () => {
     { title: "Home", url: "", active: true },
     { title: "Contact Us", url: "/contact", active: false },
     { title: "RSS", url: "Rss", active: false },
-    { title: "Github", url: "Github", active: false },
+    { title: "Github", url: "https://github.com/salahashraf3", active: false },
   ];
   return (
     <div className={style.main}>
@@ -24,6 +24,7 @@ const page = () => {
                   }`}
                   key={id}
                   href={item.url}
+                  target="_blank"
                 >
                   {item.title}
                 </Link>

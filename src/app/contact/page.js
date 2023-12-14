@@ -8,7 +8,7 @@ const contact = () => {
     { title: "Home", url: "/", active: false },
     { title: "Contact Us", url: "/contact", active: true },
     { title: "RSS", url: "/Rss", active: false },
-    { title: "Github", url: "/Github", active: false },
+    { title: "Github", url: "https://github.com/salahashraf3", active: false },
   ];
   return (
     <div className={style.contact}>
@@ -24,6 +24,7 @@ const contact = () => {
                   }`}
                   key={id}
                   href={item.url}
+                  target="_blank"
                 >
                   {item.title}
                 </Link>

@@ -31,7 +31,7 @@ const BlogPage = () => {
     { title: "Home", url: "/", active: false },
     { title: "Contact Us", url: "/contact", active: false },
     { title: "RSS", url: "/Rss", active: false },
-    { title: "Github", url: "/Github", active: false },
+    { title: "Github", url: "https://github.com/salahashraf3", active: false },
   ];
 
   const router = useRouter();
